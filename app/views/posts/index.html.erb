@@ -1,6 +1,8 @@
-<h1>Posts</h1>
+<h1>Post Form</h1>
 <ul>
   <% @posts.each do |p| %>
     <li><%= p.title %> - <%= p.description %></li>
   <% end %>
 </ul>
+
+<%= link_to "new post", new_post_path%>
